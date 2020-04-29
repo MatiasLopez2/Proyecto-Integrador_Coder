@@ -419,6 +419,21 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 }
     
   
-  
-  
-  
+  /*MEDIA QUERYS*/
+
+@media only screen and (max-width: 600px){
+
+    body#imagen_presentacion {
+        background-position: center;
+    }
+    
+    #presentacion h1 {
+        font-size: 70px;
+    }
+    
+    button#btn_presentacion {
+        margin-left: 40%;
+        margin-top: 54%;
+    }
+    
+}
