@@ -379,17 +379,34 @@ nav {
 }
 
 
-@for $i from 1 through 5 {
-    @if (a:nth-child(#{$i}) == 1, a:nth-child(#{$i}) == 3){
-        width: 100px;
-    }
-    @else if (a:nth-child(#{$i}) == 2, a:nth-child(#{$i}) == 4){
-        width: 110px;
-    }
-    @else{
-        width: 120px;
-    }
+// @for $i from 1 through 5 {
+//     @if (a:nth-child(#{$i}) == 1, a:nth-child(#{$i}) == 3) {
+//         width: 100px;
+//     }
+//     @else if (a:nth-child(#{$i}) == 2, a:nth-child(#{$i}) == 4) {
+//         width: 110px;
+//     }
+//     @else{
+//         width: 120px;
+//     }
+// }
+
+a:nth-child(1){
+    width: 100px;
 }
+a:nth-child(2){
+    width: 110px;
+}
+a:nth-child(3){
+    width: 100px;
+}
+a:nth-child(4){
+    width: 110px;
+}
+a:nth-child(5){
+    width: 120px;
+}
+
     
     
 nav .start-home, a:nth-child(1):hover~.animation {
